@@ -8,6 +8,6 @@ void print_alphabet(void)
 
 	for (alph = 97; alph <= 122; alph++)
 	{		_putchar(alph);
-			_putchar(10);
 	}
+	_putchar(10);
 }
