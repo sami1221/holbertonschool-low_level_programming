@@ -7,14 +7,15 @@
  *
  * Return: pointer to dest
  */
-char *_strncat(char *dest, char *src, int n);
-int x, y;
+char *_strncat(char *dest, char *src, int n)
 {
-	for (x = 0; dest[x] != '\0'; x++)
+int y;
+
+	for (n = 0; dest[n] != '\0'; n++)
 	for (y = 0; src[y] != '\0'; y++)
 	{
-		dest[x] = src[y];
-		x++;
+		dest[n] = src[y];
+		n++;
 	}
 	return (dest);
 }
