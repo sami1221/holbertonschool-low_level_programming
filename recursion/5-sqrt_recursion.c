@@ -29,4 +29,8 @@ int _sqrt_recursion2(int n, int i)
 	{
 		return (-1);
 	}
+	else if (i * i < n)
+	{
+		return (-1);
+	}
 }
