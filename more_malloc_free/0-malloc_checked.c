@@ -1,22 +1,25 @@
 #include "main.h"
+
 /**
- *malloc_checked - allocates memory using malloc
- *@b: length
- *Return: pointer if success, 98 if fails
+ * malloc_checked - allocates memory depending of the type
+ * @b: length of the array
+ * Return: point on success, 98 on fail
  */
+
 void *malloc_checked(unsigned int b)
 {
-	void *pointer;
+	void *point;
 
 	if (b < 1)
 	{
 		exit(98);
 	}
-	pointer = malloc(b);
-	
-	if (pointer == NULL)
+
+	point = malloc(b);
+
+	if (point == NULL)
 	{
 		exit(98);
 	}
-	return (pointer);
+	return (point);
 }
