@@ -2,6 +2,7 @@
 /**
  * print_numbers - prints numbers
  * @n: numbers of integers
+ * @separator: pointer
  * Return: numbers and separator in between
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -11,8 +12,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list args;
 
 	va_start(args, n);
-	
-	if(!separator)
+
+	if (!separator)
 	{
 		separator = "";
 	}
